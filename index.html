@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title> PS5 for dummies </title>
+<meta charset ="UTF-8">
+<meta name="viewport" content ="width=device-width, initial-scale=1">                
+<style> 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Calibri, sans-serif;
+}
+
+.header {
+  padding: 20px; 
+  text-align: center;
+  background: #00008B; 
+  color: white; 
+}
+
+.header h2{
+  font-size: 40px;  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: sticky; 
+  position: -webkit-sticky;
+  top: 0; 
+}
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 15px 20px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.navbar search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex; 
+  -ms-flex-wrap: wrap;
+  flex-warp: wrap;
+}
+
+.side {
+  -ms-flex: 30%;
+  flex: 30% 
+  background-color: #f1f1f1;
+  padding: 10px; 
+}
+
+.main {
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.image {
+  width: 80%; 
+  padding: 10px;
+  align: center; 
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1> PS5 for Dummies </h1>
+  <p> A website created by Anhad Singh Ahluwalia , Class 11-A </p>
+</div>
+<div class="navbar">
+  <a href = "a1.html" class="active"> Home </a> 
+  <a href = "a2.html"> Features </a> 
+  <a href = "a3.html"> Comparison Battle </a>
+  <a href = "a5.html">  Reviews </a>
+  <a href = "a4.html"> FAQs </a>
+  <a href = "a7.html"> Fan Corner </a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<br> 
+<div class="row">
+  <div class="side">
+    <div> <h3> Watch Launch Event </h3> </div>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/8apW-UFhGZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="main">
+     <marquee direction="left"><h2> PlayStation 5 : An Overview </h2></marquee>
+     <br> <br> <br>
+     <div class="image">  
+    	<img src = "https://cnet2.cbsistatic.com/img/PV8-iwpOhSxj53KDRPWjcfn-h5I=/940x0/2020/06/11/8a677111-bff6-4f4c-99b4-f9bfd2595734/ps5.jpg" style="width:500px;">
+     </div>
+   </div>
+   <div class="main"> 
+     <br>
+     <p> <b> The PlayStation 5 </b> (officially abbreviated as PS5) is an upcoming home video game console developed by Sony Interactive Entertainment. Announced in 2019 as the successor to the PlayStation 4, it is scheduled to launch in late 2020. The platform is anticipated to launch in two varieties, as a base PlayStation 5 system incorporating a Ultra HD Blu-ray compatible optical disc drive for retail game support alongside digital distribution via the PlayStation Store, and a lower-cost Digital variant lacking the disc drive while retaining digital download support. </p>
+     <br> 
+     <p> The PlayStation 5 retains the same AMD-branded CPU family as the PlayStation 4, but features a customized solid state drive designed for high-speed data streaming to enable significant improvements in graphical performance. The hardware also features a custom AMD GPU capable of ray tracing, support for 4K resolution displays and high framerates, new audio hardware for real-time 3D audio effects, and backward compatibility with most PlayStation 4 and PlayStation VR games. </p>
+  </div>
+</div>
+</body> 
+</html>

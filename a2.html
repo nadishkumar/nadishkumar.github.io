@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PS5 for dummies </title>
+<meta charset ="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Calibri, sans-serif;
+}
+
+.header {
+  padding: 20px; 
+  text-align: center;
+  background: #00008B; 
+  color: white; 
+}
+
+.header h2{
+  font-size: 40px;  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: sticky; 
+  position: -webkit-sticky;
+  top: 0; 
+}
+.navbar a {
+  float: left;
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 15px 20px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.navbar search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: yellow;
+}
+</style>
+</head>
+<body bgcolor="#c8a2c8">
+
+<div class="header">
+  <h1> PS5 for Dummies </h1>
+  <p> A website created by Anhad Singh Ahluwalia , Class 11-A </p>
+</div>
+
+<div class="navbar">
+  <a href = "a1.html"> Home </a> 
+  <a href = "a2.html" class="active"> Features </a> 
+  <a href = "a3.html"> Comparison Battle </a>
+  <a href = "a4.html"> Reviews </a>
+  <a href = "a5.html"> FAQs </a>
+  <a href = "a7.html"> Fan Corner </a> 
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div> 
+<marquee behavior="scroll" direction="left" scrollamount="20" bgcolor="aqua"> <h2> Key Highlights and Specifications </h2> </marquee>
+<br> <br> 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3> Processor </h3>
+      <p> 8 - core AMD Ryzen Zen 2-architecture CPU at maximum 3.5GHz </p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3> Graphics </h3>
+      <p>AMD Navi/RDNA 2-family GPU with 36 CU at 2.23GHz </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3> Video Memory </h3>
+      <p> 16GB GDDR6 with 256-bit interface (448GBps) </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3> Storage </h3>
+      <p> 825GB SSD at 5.5-9GBps; NVMe SSD slot; support for USB HDD </p>
+    </div>
+  </div> 
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3> Optical Drive, Resolution </h3>
+      <p> 4K Blu-ray Optical drive with maximum output resolution of 8K and maximum frame rate of 4K/120fps </p>
+      <br> 
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3> Audio </h3>
+      <p> 3D, accelerated by custom Tempest Engine hardware; for headphones only at launch, supplemented by virtual surround for speaker audio </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3> New Controller Features </h3>
+      <p> Haptic feedback, adaptive triggers, USB-C connector </p>
+      <br> <br>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3> Notable Games </h3>
+      <p> Assassin's Creed Valhalla, Godfall, Gods and Monsters, Observer: System Redux, Rainbow Six Siege, Spider-Man: Miles Morales, Watch Dogs: Legion </p>
+    </div>
+  </div> 
+</div>
+<br>
+
+
+</body>
+</html>

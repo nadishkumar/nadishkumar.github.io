@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PS5 for dummies </title>
+<meta charset ="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Calibri, sans-serif;
+}
+
+.header {
+  padding: 20px; 
+  text-align: center;
+  background: #00008B; 
+  color: white; 
+}
+
+.header h2{
+  font-size: 40px;  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: sticky; 
+  position: -webkit-sticky;
+  top: 0; 
+}
+.navbar a {
+  float: left;
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 15px 20px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.navbar search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image { 
+ padding: 20px 30px;
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1> PS5 for Dummies </h1>
+  <p> A website created by Anhad Singh Ahluwalia , Class 11-A </p>
+</div>
+
+<div class="navbar">
+  <a href = "a1.html"> Home </a> 
+  <a href = "a2.html"> Features </a> 
+  <a href = "a3.html"> Comparison Battle </a>
+  <a href = "a4.html"> Reviews </a>
+  <a href = "a5.html"> FAQs </a>
+  <a href = "a7.html" class="active"> Fan Corner </a> 
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div> 
+<marquee behavior="scroll" direction="left" scrollamount="20" bgcolor="orange"> <h2> Important Information </h2> </marquee>
+<br> <br> <br> 
+<a href = "https://www.instagram.com/playstation/?hl=en"> <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" hspace="50" width="250" height="250"> </a>
+<a href = "https://mobile.twitter.com/playstation"> <img src = "data:image/png;base64,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" hspace="40" width="250" height="250"> </a>
+<a href = "https://www.facebook.com/SonyPlayStation5News/"> <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEVCZ7L///8qWKz6+vw+ZbE8Y7B5j8Ree7tKbLQvW62Jncvb4e9QcbY+ZLEyXa45YbCWp9Ds7/ZrhsDS2epXd7m3w9+Qos6drdPQ1+ni5/K/yeJkgL6Blsixvtzv8visudqjstZ7ksXH0OZohL+9yOH/Gkr+AAAD+0lEQVR4nO3dW3OqMBSG4QSCEoVExGOth9r+/9+4tdbZu7M7GqVhrZX53pveOTwDgpCEKv3VajItVSqV02V7hanLn61x3hjqDfu1TO2t2v4jbGaWepsiZGfNVTh2BfXWRKnw64uwcekcnt8zxe5TWNXUWxKtYnYW7h31dkTMzU/COtVj9JwptTqmeBr9m23VwlNvRNT8Um1SPkiVqgcqnZ9qP2Yq6i1ACCGEEEIIIYQQQmL6fBiY0NDfNVN775zNsqwoy1LV3mXnrHXWOe+LwohGF86qzWS/aptcf2vXrNvVcbtcLqZVZazM5/WmsNlgu9b3y3eNwKe9xhWjY4Duq0rakVrb2Ut+3yVWaLLN6hGeNKFxVXufJFhY2/3DPlFCN2yeAMoRmmz5jE+Q0D1wgZAoNG78JFCI0BRPfQXlCI0L+YUmWZg9fhWUJbTzDkAJQj/qAhQgNFUnoAChffo6IUToF92A7IXGdQSyF7pt6kLVFchd2H0XMhca2xnIXNj5RMpeaDv84hYh7Ppzhr/QH1IX/sZBylvY/WLIXOhfUxe6B+98m2Y9/r+SsfCBr2F+nAyN/SnOq+6MD955I2u9wMVZZhYIPFgvT3cu9EQzkDmQrc4rrsKAchdHupcQ4IfYPXg6lQaN9kpegR30kO1D7jGqVLYLEL5LXoOdBUy5yIVeJy6FCMeCzzNhQtFfwyDhQfQi7BDhQvLFIkj4mvw+fE1+H44gZB2EEPIPQgj5ByGE/IMQQv5BCCH/IISQR+ZGQUJ/6xMMg6XOwxtVAcLJ7NYnnCJ+q6UZ3jd0LUtd2CQvbGmHbnoQEg9O9SBc0g5s9CAcJS8c0o7z9yAknpkYX5gTj/PHF66TFx6JZzLEF86TF06Ix/njC9+I7x/jC6mnsccXUk+Zii5sqKe9RReST+yLLnxJ/igln9gXXUj+sDG6cEM9Rzq6kHzdWmxhTvugrQch+eUwupD63im+kH6ee2wh9b1TfCH9LPDYQvKLRXQh/cLZyMId+YkmtpD6UWJ8If3l8FR5Ix8wyv126xMU+dfwTiEzFQa3bo+4A7sL2QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0IIH4joFZl9CU2p3hMXTtWE5mDvS+gnakXznpe+hLZVOumj1Cit9J7kVTY9Ce38JNQVxTsk+xEWM30Wri3BgdqLsK53n0I9dv3vxT6Evl7ri1A3let7N8YXGrvZ6atQ633hil7/QVRcoam9LT8un/Il1PlqsSl/k3CnuMJyumyvn/IHstJMOhEjrRsAAAAASUVORK5CYII=" hspace = "40" width="250" height="250"> </a> 
+<a href = "https://www.youtube.com/watch?v=ph8LyNIT9sg"> <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1280px-Logo_of_YouTube_%282015-2017%29.svg.png" hspace="50" width="350" height="250"> </a>
+</body>
+</html>

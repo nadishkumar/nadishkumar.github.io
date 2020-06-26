@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5px;
+  font-family: Arial, Calibri, sans-serif;
+}
+
+.header {
+  padding: 20px; 
+  text-align: center;
+  background: #00008B; 
+  color: white; 
+}
+
+.header h2{
+  font-size: 40px;  
+
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: sticky; 
+  position: -webkit-sticky;
+  top: 0; 
+}
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 15px 20px;
+}
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.navbar search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+table, th, td {
+  border: 1px dashed gray;
+}
+
+</style>
+</head>
+<body bgcolor="#c8a2c8">
+<div class="header">
+  <h1> PS5 for Dummies </h1>
+  <p> A website created by Anhad Singh Ahluwalia , Class 11-A </p>
+</div>
+
+<div class="navbar">
+  <a href = "a1.html"> Home  </a> 
+  <a href = "a2.html"> Features </a> 
+  <a href = "a3.html" class="active"> Comparison Battle </a>
+  <a href = "a5.html"> Reviews </a>
+  <a href = "a4.html"> FAQs </a>
+  <a href = "a7.html"> Fan Corner </a> 
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<marquee behavior="scroll" direction="left" scrollamount="20" bgcolor="aqua"> <h2> Battle between PS5 and Xbox Series X </h2> </marquee>
+<br> <br> 
+<table style="width:95%" align="center">
+  <tr>
+    <th> <b> Point of Comparison </b> </th>
+    <th> <img src = "data:image/jpeg;base64,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"> </th> 
+    <th> <img src = "https://compass-ssl.xbox.com/assets/e7/b1/e7b1f2d8-2072-4fcc-ac86-9501c96d2aed.jpg?n=Xbox-Series-X_Sharing_200x200.jpg"> </th>
+  </tr>
+  <tr>
+    <td> <b> Processor </b> </td>
+    <td> 8-core AMD Ryzen Zen 2-architecture CPU at max 3.5GHz </td>
+    <td> 8-core AMD Ryzen Zen 2-architecture CPU at 3.6 or 3.8GHz </td>
+  </tr>
+  <tr>
+    <td> <b> Graphics </b> </td>
+    <td> AMD Navi/RDNA 2-family GPU with 36 CU at 2.23 GHz (10.3 TFLOPS)</td>
+    <td> AMD Navi/RDNA 2-family GPU with 52 CU at 1.825GHz (12TFLOPS FP32) </td>
+  </tr>
+  <tr>
+    <td> <b> Video Memory </b> </td>
+    <td>16GB GDDR6 with 256-bit interface (448GB/sec) </td>
+    <td>16GB GDDR6 with 14Gbps 320-bit interface (10GB at 560GB/s allocated to GPU, 6GB at 336GB/s allocated to rest of system with 3.5GB for GPU)</td>
+  </tr>
+  <tr>
+    <td> <b> Storage </b> </td>
+    <td>825GB SSD at 5.5-9GB/sec; NVMe SSD slot; support for USB HDD</td>
+    <td>1TB NVMe SSD; proprietary 1TB SSD add-on module; USB 3.2 external HDD support</td>
+  </tr>
+  <tr>
+    <td> <b> Maximum Output Resolution and Frame Rate </b> </td>
+    <td>8K , 4K/120fps </td>
+    <td>8K , 4K/120fps </td>
+  </tr>
+  <tr>
+    <td> <b> Audio </td> </b> 
+    <td> 3D, accelerated by custom Tempest Engine hardware; for headphones only at launch, supplemented by virtual surround for speaker audio</td>
+    <td> Ray Traced </td>
+  </tr>
+  <tr>
+    <td> <b> Controller </td> </b> 
+    <td> Haptic feedback, adaptive triggers, USB-C connector </td>
+    <td> Share button, Dynamic Latency Input </td>
+  </tr>
+  <tr>
+    <td> <b> VR support </b> </td>
+    <td> Yes, compatible with PSVR headset </td>
+    <td> Unknown </td>
+  </tr>
+  <tr>
+    <td> <b> Games </b> </td>
+    <td> Assassin's Creed Valhalla, Godfall, Gods and Monsters, Observer: System Redux, Rainbow Six Siege, Spider-Man: Miles Morales, Watch Dogs: Legion </td>
+    <td> Assassin's Creed Valhalla, Cyberpunk 2077, Halo: Infinite, Rainbow Six Siege, Madden NFL 21, Yakuza: Like a Dragon </td>
+  </tr>
+  <tr>
+    <td> <b> Subsriction tie-in </b> </td>
+    <td> PS Now </td>
+    <td> Xbox Game Pass </td>
+  </tr>
+  <tr>
+    <td> <b> Websites </b> </td>
+    <td> https://www.playstation.com/en-in/ </td>
+    <td> https://www.xbox.com/en-IN/ </td>
+  </tr>
+</table>
+<br> 
+</body>
+</html>

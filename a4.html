@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title> PS5 for dummies </title>
+<meta name="viewport" content ="width=device-width">
+<style> 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Calibri, sans-serif;
+}
+
+.header {
+  padding: 20px; 
+  text-align: center;
+  background: #00008B; 
+  color: white; 
+}
+
+.header h2{
+  font-size: 40px;  
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: sticky; 
+  position: -webkit-sticky;
+  top: 0; 
+}
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 15px 20px;
+}
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.navbar search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+.collapsible {
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1 px dotted black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body bgcolor="orange">
+
+<div class="header">
+  <h1> PS5 for Dummies </h1>
+  <p> A website created by Anhad Singh Ahluwalia , Class 11-A </p>
+</div>
+<div class="navbar">
+  <a href = "a1.html"> Home </a> 
+  <a href = "a2.html"> Features </a> 
+  <a href = "a3.html"> Comparison Battle </a>
+  <a href = "a5.html"> Reviews </a>
+  <a href = "a4.html" class="active"> FAQs </a> 
+  <a href = "a7.html"> Fan Corner </a> 
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<br>
+<marquee direction="left">
+<img src="https://cdn3-www.playstationlifestyle.net/assets/uploads/2020/01/PS-Now-650x400.jpg" width="500" height="200" alt="Natural" />
+</marquee>
+<br> <br>
+<button type="button" class="collapsible" font-size="30px"> Will the PS5 be available in different colors? </button>
+<div class="content">
+  <p> Whilst the white-and-black color scheme is to the taste of many, others would probably prefer an all-black or all-white console, or other exciting combos. Don't worry, you can literally customize your PS5 console to different color schemes - at least this site is boasting such possibilities. What's more, we expect Sony to officially reveal different console packages which will deliver different color schemes with some game branding too. </p>
+</div>
+
+<button type="button" class="collapsible"> When will it be Released? </button>
+<div class="content">
+  <p> The PS5 will release holiday season 2020. We don’t know yet exactly when that will be, but we’re expecting it to launch around November-December time, in keeping with some of the other consoles in the PlayStation line. Sony has already confirmed that the pandemic won’t affect the PlayStation 5’s launch, which is great news for those of us who might still need something to do when the wintertime comes around. </p>
+</div>
+
+<button type="button" class="collapsible"> How much more powerful will the PS5 be than the PS4? </button>
+<div class="content">
+  <p> In short: a lot more powerful. Sony is experimenting with the latest graphics technology, including ray tracing, which uses lighting to simulate realistic objects and environment effects. Cerny is proud of the solid state drive (SSD) in the PS5, which he considers to be head and shoulders above the average market SSD. Supposedly, the PS5 will be able to load PS4 content in 0.8 seconds where before it took 15. That should give you an indication of how much more powerful the machine could be. From there, the sky’s the limit. </p>
+</div>
+
+<button type="button" class="collapsible"> Will the PS5 have backwards compatibility? </button>
+<div class="content">
+  <p> Again, this one has a pretty clear answer, and it’s yes. Sony has confirmed that the PlayStation 5 will be able to play “an overwhelming majority” of PS4 games. We’re assuming that’s both physical and digital games, so your library is safe. What’s slightly more concerning is that Sony hasn’t confirmed the console will be able to support every single PS4 game at launch, although we doubt this will be a problem; we’re expecting patches to bring in compatibility for the remaining titles. </p>
+</div>
+
+<button type="button" class="collapsible"> Will the PS5 support PS VR? </button>
+<div class="content">
+  <p> Another very clear answer here: yes it will. The PlayStation 5 will continue to support the current existing PS VR headset. That presumably also means you’ll still be able to play all your current PS VR titles on the PS5, as well as meaning some new games will be in development for the device. Sony are tight-lipped about their future VR strategy, but a PS VR 2 is not unimaginable given the original device’s runaway success. Frankly, it would be more of a surprise to us if Sony didn’t make another PS VR headset. </p>
+</div>
+
+<button type="button" class="collapsible" font-size="30px"> Expected Price? </button>
+<div class="content">
+  <p> Well, the PS5’s price is shrouded in mystery — at least for now. When the PS4 was out, it undercut the Xbox One by $100 and that strategy worked. We don’t think Sony will be able to use the same trick again, given the rising cost of internal components. We expect the base model to cost $449, while the top-end version could go up to $600 price point.</p>
+</div>
+
+<button type="button" class="collapsible" font-size="30px"> Will there be a PS5 Pro? </button>
+<div class="content">
+  <p> Sony is neither making a Pro nor a slim version of the PS5. Instead, the PS5 will be made available in a standard version with a 4K Blu-ray drive and the Digital Edition that eliminates the disc drive. As far as the digital edition goes, it would be cheaper, but that would also make users solely dependent on their internet connection in downloading games. </p>
+</div>
+
+<button type="button" class="collapsible" font-size="30px"> Is it more powerful than Xbox Series X? </button>
+<div class="content">
+  <p> The big question, of course, is whether the PS5 is more powerful than the Xbox Series X. Both consoles are capable of 8K resolution and feature a solid-state drive that minimises loading times. Technically speaking, the PS5 and the Xbox Series X will use the same chip based on the AMD Zen 2. It’s the GPU and SSD sides where the PS5 and Xbox Series X really differ. </p>
+</div>
+
+<script>
+var a = document.getElementsByClassName("collapsible");
+var x;
+for (x = 0; x < a.length; x++) {
+  a[x].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<br>
+</body> 
+</html>

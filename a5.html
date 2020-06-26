@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PS5 for dummies </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Calibri, sans-serif;
+}
+
+.header {
+  padding: 20px; 
+  text-align: center;
+  background: #00008B; 
+  color: white; 
+}
+
+.header h2{
+  font-size: 40px;  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: sticky; 
+  position: -webkit-sticky;
+  top: 0; 
+}
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 15px 20px;
+}
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.navbar search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+
+.containerTab {
+  padding: 20px;
+  color: black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body bgcolor="#c8a2c8">
+
+<div class="header">
+  <h1> PS5 for Dummies </h1>
+  <p> A website created by Anhad Singh Ahluwalia , Class 11-A </p>
+</div>
+
+<div class="navbar">
+  <a href = "a1.html"> Home </a> 
+  <a href = "a2.html"> Features </a> 
+  <a href = "a3.html"> Comparison Battle </a>
+  <a href = "a5.html" class="active"> Reviews </a>
+  <a href = "a4.html"> FAQs </a>
+  <a href = "a7.html"> Fan Corner </a> 
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:red;">
+    Social Media Trends
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:yellow;">
+    Experts Speak  
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:orange;">
+    CEO's view
+  </div>
+  <div class="column" onclick="openTab('b4');" style="background:aqua">
+     Detective's View 
+  </div>
+</div>
+
+<div id="b1" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> Trending on Social Media </h2>
+  <p> Sony PS5 looks like a router, a reverse Oreo and Sauron's tower Or maybe the new PlayStation looks like Yu-Gi-Oh character Seto Kaiba? Social media has plenty of thoughts on matter.</p>
+  <a href = "https://www.cnet.com/news/sony-ps5-looks-like-a-router-a-reverse-oreo-and-saurons-tower/"> Read more </a> 
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:yellow">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Experts Speak</h2>
+  <p> The PS5 is quickly approaching, and although it may not be the world’s fastest console, it’s a significant upgrade over the PS4. With a whole new architecture, superior resolution support, and faster storage thanks to the SSD, the PS5 is better than the PS4 in almost every way. Thanks to the recent PS5 reveal, which showed off the games to expect from the system, we now know much more than before. There’s a lot to talk about here, so let’s waste no time in comparing PS4 vs. PS5. </p>
+  <a href = "https://www.digitaltrends.com/gaming/ps4-vs-ps5/"> Read more </a>
+  <p> PS5 vs Xbox Series X: Sony has already won a crucial battle in the next-gen console war with the jaw-droppingly sexy PlayStation 5 design - but it also needs to come in black </p>
+  <p> Sony has revealed the PS5 design in all its glory and by doing so has won an important battle in the upcoming next-gen console war against the Xbox Series X. The unique and futuristic look of the PlayStation 5 has sparked a huge debate, yet again offering Sony a massive amount of free publicity. The PS5 simply looks sexy – especially if it eventually also comes in black. </p> 
+  <a href = "https://www.notebookcheck.net/PS5-vs-Xbox-Series-X-Sony-has-already-won-a-crucial-battle-in-the-next-gen-console-war-with-the-jaw-droppingly-sexy-PlayStation-5-design-but-it-also-needs-to-come-in-black.470154.0.html"> Read More: </a> 
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:orange">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> CEO's view </h2>
+  <p> Sony's PS5 design is 'bold, daring and future facing," PlayStation CEO says </p> 
+  <p> The PlayStation head, in an interview with CNET, discusses the new PS5 design, launch games like Spider-Man, and pre-orders. </p>
+  <a href = "https://www.cnet.com/news/sonys-ps5-design-is-bold-daring-and-future-facing-playstation-ceo-says/"> Read More </a>
+</div>
+
+<div id="b4" class="containerTab" style="display:none;background:aqua">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>  Detective's View </h2>
+  <p> The PS5 is huge, according to internet detectives. </p>
+  <p> It is s big boy season! </p>
+  <p> Sony has finally shown off what the PlayStation 5 will look like, but there’s one very big question about the design that’s still unclear: just how big is the PlayStation 5?</p> 
+  <p> We will likely have to wait until Sony gives official dimensions (or shows the physical box next to something else for scale) of the controversial design to know for sure .... </p> 
+  <a href = "https://www.theverge.com/tldr/2020/6/12/21289471/playstation-5-sony-estimate-size-internet-massive-console-tv-stand"> Read More </a> 
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+<br> <br> 
+<div style="text-align:center"> 
+  <iframe width="478" height="269" src="https://www.youtube.com/embed/Zr9nUgi28_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html> 
